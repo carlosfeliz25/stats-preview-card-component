@@ -1,0 +1,86 @@
+:root {
+    /*FUENTES*/
+    --inter: 'Inter', sans-serif;
+    --lexend: 'Lexend Deca', sans-serif;
+
+    /*COLORES*/
+    --oscuroAzul: hsl(233, 47%, 7%);
+    --desaturadoAzul: hsl(244, 38%, 16%);
+    --violeta: hsl(277, 64%, 61%, 0.60);
+
+    --blanco: hsl(0, 0%, 100%);
+    --blancoTransparente: hsla(0, 0%, 100%, 0.75);
+    --blancoTransoarenteOscuro: hsla(0, 0%, 100%, 0.6);
+
+}
+
+/*GLOBALES*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 1.6rem;
+    background-color: var(--oscuroAzul);
+}
+
+.contenedor {
+    width: 90%;
+    background-color: var(--desaturadoAzul);
+    margin: auto;
+}
+
+h1 {
+    color: var(--blanco);
+}
+
+p {
+    color: var(--blancoTransparente);
+}
+
+h1, p {
+    text-align: center;
+}
+
+
+/*IMAGEN*/
+
+.imagen {
+    background-image: url(../images/image-header-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+}
+
+.imagen__overlay {
+    background-color: var(--violeta);
+    width: 100%;
+    height: 100%;
+}
+
+/*CONTENIDO*/
+
+.contenido {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--inter);
+    font-size: 1.6rem;
+}
+
+
+
+.contenido__principal span {  
+    color: var(--violeta);
+}
+
+.contenido__principal p {
+    line-height: 1.5;
+}
+
